@@ -8,4 +8,104 @@ Two key concepts are used to assign and manage the access rights of individuals:
 
 ## The Bell-La Padula Model
 
+The Bell-La Padula Model is used to achieve confidentiality. This model has a few assumptions, such as an organisation's hierarchical structure it is used in, 
+where everyone's responsibilities/roles are well-defined.
+The model works by granting access to pieces of data (called objects) on a strictly need to know basis. This model uses the rule "no write down, no read up".
+
+=> Advantages are:
+
+Policies in this model can be replicated to real-life organisations hierarchies (and vice versa)
+
+Simple to implement and understand, and has been proven to be successful.
+
+=> Disadvangtages are:
+
+Even though a user may not have access to an object, they will know about its existence -- so it's not confidential in that aspect.
+
+The model relies on a large amount of trust within the organisation.
+
+The Bell LaPadula Model is popular within organisations such as governmental and military. This is because members of the organisations are presumed to have already gone 
+through a process called vetting. Vetting is a screening process where applicant's backgrounds are examined to establish the risk they pose to the organisation. 
+Therefore, applicants who are successfully vetted are assumed to be trustworthy - which is where this model fits in.
+
 ## Biba Model
+
+The Biba model is arguably the equivalent of the Bell-La Padula model but for the integrity of the CIA triad.
+
+This model applies the rule to objects (data) and subjects (users) that can be summarised as "no write up, no read down". 
+This rule means that subjects can create or write content to objects at or below their level but can only read the contents of objects above the subject's level.
+
+Advantages:
+This model is simple to implement.
+Resolves the limitations of the Bell-La Padula model by addressing both confidentiality and data integrity.
+
+Disadvantages:
+There will be many levels of access and objects. Things can be easily overlooked when applying security controls.
+Often results in delays within a business. For example, a doctor would not be able to read the notes made by a nurse in a hospital with this model.
+
+The Biba model is used in organisations or situations where integrity is more important than confidentiality. 
+For example, in software development, developers may only have access to the code that is necessary for their job. 
+They may not need access to critical pieces of information such as databases, etc. 
+
+## Threat Modeling and incident response
+
+Threat modeling is the process of reviewing, improving and testing the security protocols in place in an organization's information technology infrastructure and services.
+The threat modelling process is very similar to a risk assessment made in workplaces for employees and customers. The principles all return to:
+
+Preparation.
+Identification.
+Mitigations.
+Review.
+
+ STRIDE (Spoofing identity, Tampering with data, Repudiation threats, Information disclosure, Denial of Service and Elevation of privileges).
+
+ PASTA (Process for Attack Simulation and Threat Analysis).
+
+=> Spoofing- this principle requires you to authenticate requests and users accessing a system. Spoofing involves a malicious party falsely identifying itself as another. 
+Access keys sych as API keys or signature via encryption helps remediate this threat.
+
+=> Tampering- By providing anti tempering measures to a system or application, you help provide integrity to the data. Data that is accessed must be kept integral and accurate.
+example: shops use seals on food products.
+
+=> Repudiation: This principle dictates the use of services such as logging of activity for a system or application to track.
+
+=> Information Disclosure: Applications or services that handle information of multiple users need to be appropriately configured to only show information relevant to the owner.
+
+=> Denial of Service: Applications and services use up system resources, 
+these two things should have measures in place so that abuse of the application/service won't result in bringing the whole system down.
+
+=> Elevation of Privilege: This is the worst-case scenario for an application or service. It means that a user was able to escalate their authorization to that of a higher level i.e. an administrator. 
+This scenario often leads to further exploitation or information disclosure.
+
+Computer Security Incident Response Team (CSIRT).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
