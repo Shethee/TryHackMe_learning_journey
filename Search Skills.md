@@ -19,3 +19,11 @@ link1:https://www.virustotal.com/gui/home/upload
 
 ## Have I Been Pwned
 Link:https://haveibeenpwned.com/
+
+## Linux
+=> ls 
+=> cd
+=> pwd
+=> cat
+=> 
+link:https://vim.rtorr.com/
